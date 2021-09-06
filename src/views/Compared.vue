@@ -29,7 +29,7 @@
                     <div class="card-text">
                         <p>{{ShowData.body}}</p>
                     </div>
-                        <p>{{this.cookie}}</p>
+
                 </div>
             </div>
         </div>
@@ -38,12 +38,12 @@
 
 <script>
     import{useRouter} from 'vue-router'
-    import Cookies from 'js-cookie'
+
     export default {
         data(){
             return{
                 Router: useRouter(),
-                cookie: Cookies.get('saman')
+
 
             }
         },

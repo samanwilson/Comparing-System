@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
-import Cookies from 'js-cookie'
 
 
 
@@ -75,7 +74,7 @@ export default createStore({
 
       axios.get(`https://jsonplaceholder.typicode.com/posts/${filter}`).then((response)=>{
         context.commit('SetSpost',response.data)
-        Cookies.set('name','saman')
+
         console.log(response.data)
       }).catch((e)=>{
 
